@@ -1,0 +1,164 @@
+{
+  "home": {
+    "title": "Marc Martinez — Desarrollador Full Stack especializado en webs rápidas y personalizadas",
+    "content": "Desarrollo webs modernas y eficientes, hechas a la medida de tus necesidades.",
+    "cta": "¿Hablamos?"
+  },
+  "about": {
+    "title": "Acerca de mí",
+    "content": "Más de 4 años de experiencia, ayudo a personas y negocios a tener presencia online con sitios web diseñados y adaptados a lo que realmente necesitan. Me esfuerzo por entender tus objetivos y trabajar de cerca contigo para crear soluciones que funcionen y te hagan crecer. Mi forma de trabajar es cercana, profesional y siempre con atención personalizada.",
+    "cta": "Contactame"
+  },
+  "services": {
+    "title": "Servicios",
+    "data": [
+      {
+        "title": "Diseño y desarrollo web",
+        "content": "Creación de páginas web atractivas y funcionales que reflejan la identidad de tu negocio."
+      },
+      {
+        "title": "Landing page",
+        "content": "Páginas específicas diseñadas para captar clientes y maximizar conversiones."
+      },
+      {
+        "title": "Tiendas online (e-commerce)",
+        "content": "Desarrollo de tiendas digitales completas, fáciles de usar y seguras para vender tus productos."
+      },
+      {
+        "title": "Blogs y plataformas de contenido",
+        "content": "Creación de espacios para compartir información, noticias o contenido de valor para tu audiencia."
+      },
+      {
+        "title": "Consultoria técnica",
+        "content": "Asesoría personalizada para ayudarte a elegir las mejores tecnologías y estrategias digitales."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "data": [
+      {
+        "title": "Proyecto 1",
+        "content": "Descripción del proyecto 1"
+      },
+      {
+        "title": "Proyecto 2",
+        "content": "Descripción del proyecto 2"
+      },
+      {
+        "title": "Proyecto 3",
+        "content": "Descripción del proyecto 3"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "content": "¿Tienes una idea o proyecto? Estoy aquí para ayudarte a hacerlo realidad. Disponibilidad flexible y atención personalizada.",
+    "cta": "Enviar mensaje"
+  },
+  "faqs": {
+    "title": "FAQ's",
+    "data": [
+      {
+        "question": "¿Cuánto tiempo tarda un proyecto?",
+        "answer": "El tiempo de desarrollo depende de la complejidad del proyecto, las herramientas utilizadas y los recursos disponibles."
+      },
+      {
+        "question": "¿Puedo solicitar cambios durante el desarrollo?",
+        "answer": "Sí, mantengo comunicación constante para ajustar lo que necesites."
+      },
+      {
+        "question": "¿Qué tecnologías usas?",
+        "answer": "Utilizo tecnologías modernas como React, Next.js, Node.js, y bases de datos SQL para ofrecer sitios rápidos y confiables."
+      },
+      {
+        "question": "¿Ofreces soporte después del lanzamiento?",
+        "answer": "Sí, puedes contar conmigo para mantenimiento y mejoras futuras."
+      },
+      {
+        "question": "¿Puedo pedir presupuesto?",
+        "answer": "Sí, ofrezco un presupuesto estimado basado en tus necesidades."
+      }
+    ]
+  },
+  "tech": {
+    "title": "Tecnologías",
+    "content": "Trabajo con las últimas herramientas para crear sitios web rápidos, seguros y escalables",
+    "frontend": [
+      {
+        "name": "React"
+      },
+      {
+        "name": "Next.js"
+      },
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "Tailwind CSS"
+      }
+    ],
+    "backend": [
+      {
+        "name": "Node.js"
+      },
+      {
+        "name": "Express"
+      },
+      {
+        "name": "Prisma"
+      }
+    ],
+    "database": [
+      {
+        "name": "MySQL"
+      },
+      {
+        "name": "PostgreSQL"
+      },
+      {
+        "name": "MongoDB"
+      }
+    ],
+    "cms": [
+      {
+        "name": "Strapi"
+      },
+      {
+        "name": "Prestashop"
+      }
+    ],
+    "integration": [
+      {
+        "name": "Stripe"
+      },
+      {
+        "name": "SendGrid"
+      }
+    ]
+  },
+  "process": {
+    "title": "Proceso de trabajo",
+    "data": [
+      {
+        "title": "Revisión de necesidades",
+        "content": "Discutimos tus objetivos y las herramientas que usaremos."
+      },
+      {
+        "title": "Evaluación de presupuesto",
+        "content": "Proporciono un presupuesto estimado basado en tus necesidades."
+      },
+      {
+        "title": "Desarrollo",
+        "content": "Construyo el sitio web manteniendo comunicación constante para ajustar detalles y garantizar que todo vaya según lo planeado."
+      },
+      {
+        "title": "Lanzamiento y soporte",
+        "content": "Publico tu proyecto y continúo disponible para soporte, mantenimiento y futuras mejoras."
+      }
+    ]
+  }
+}
