@@ -1,6 +1,9 @@
 ---
 import translation from "@/locales/es/traductions.json";
 import SectionTitle from "../SectionTitle.astro";
+import { getSecret } from "astro:env/server";
+
+const SITE_URL = getSecret("SITE_URL");
 ---
 
 <section id="contact" class="py-24 px-6 bg-background text-foreground">
@@ -16,8 +19,7 @@ import SectionTitle from "../SectionTitle.astro";
     <form
       name="contact"
       method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
+      action="https://formsubmit.co/f113e2976e8e9bbcb306773f79d0741e"
       class="grid gap-6 text-left p-8"
     >
       <input type="hidden" name="form-name" value="contact" />
@@ -61,6 +63,11 @@ import SectionTitle from "../SectionTitle.astro";
           class="px-4 py-3 border border-muted/30 rounded-xl bg-transparent focus:outline-none focus:ring-2 focus:ring-accent/60 transition-all"
         ></textarea>
       </div>
+
+      <!-- Hidden inputs -->
+      <input type="hidden" name="_next" value={`${SITE_URL}/email-sent`} />
+      <input type="hidden" name="_subject" value={`Email from ${SITE_URL}`} />
+      <!-- <input type="hidden" name="_autoresponse" value="He recibido tu email, en breves te daré una respuesta, gracias!"> -->
 
       <button
         type="submit"
