@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/fonts/Inter_18pt-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter bold";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("/fonts/Inter_18pt-Bold.ttf") format("truetype");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima igual a la ventana */
+}
+
+#main-content {
+  flex-grow: 1; /* Hace que el contenido principal crezca y empuje el footer hacia abajo */
+}
+
+body {
+  @apply xl:w-3/4 xl:m-auto font-sans text-primary;
+}
+
+section {
+  @apply py-24;
+}
+
+.cta-primary {
+  @apply py-2 px-4 rounded-full bg-accent text-white transition duration-300 hover:bg-accent/80;
+}

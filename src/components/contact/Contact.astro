@@ -1,0 +1,92 @@
+---
+import translation from "@/locales/es/traductions.json";
+import SectionTitle from "../SectionTitle.astro";
+---
+
+<section id="contact" class="py-24 px-6 bg-background text-foreground">
+  <SectionTitle title={translation.contact.title} />
+  <div
+    id="contact-wrapper"
+    class="max-w-3xl mx-auto text-center opacity-0 translate-y-8"
+  >
+    <p class="text-muted mb-10 max-w-xl mx-auto">
+      {translation.contact.description}
+    </p>
+
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="grid gap-6 text-left p-8"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="bot-field" />
+
+      <div class="grid gap-2">
+        <label for="name" class="text-sm text-muted"
+          >{translation.contact.nameLabel}</label
+        >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="px-4 py-3 border border-muted/30 rounded-xl bg-transparent focus:outline-none focus:ring-2 focus:ring-accent/60 transition-all"
+        />
+      </div>
+
+      <div class="grid gap-2">
+        <label for="email" class="text-sm text-muted"
+          >{translation.contact.emailLabel}</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="px-4 py-3 border border-muted/30 rounded-xl bg-transparent focus:outline-none focus:ring-2 focus:ring-accent/60 transition-all"
+        />
+      </div>
+
+      <div class="grid gap-2">
+        <label for="message" class="text-sm text-muted"
+          >{translation.contact.messageLabel}</label
+        >
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+          class="px-4 py-3 border border-muted/30 rounded-xl bg-transparent focus:outline-none focus:ring-2 focus:ring-accent/60 transition-all"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="mt-4 bg-accent text-white py-3 px-6 rounded-xl hover:bg-accent/90 transition-all"
+      >
+        {translation.contact.cta}
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Framer Motion Animation -->
+<script type="module">
+  import { animate } from "https://cdn.skypack.dev/motion";
+
+  const wrapper = document.querySelector("#contact-wrapper");
+
+  if (wrapper) {
+    animate(
+      wrapper,
+      { opacity: [0, 1], y: [30, 0] },
+      {
+        duration: 0.7,
+        easing: "ease-out",
+        delay: 0.2,
+      }
+    );
+  }
+</script>

@@ -1,0 +1,36 @@
+---
+import translation from "@/locales/es/traductions.json";
+import NavItem from "./NavItem.astro";
+import Lang from "./Lang.astro";
+---
+
+<header
+  id="main-header"
+  class="sticky w-full top-0 flex items-center justify-between py-6 z-10 bg-white/80 backdrop-blur-sm"
+>
+  <nav>
+    <ul class="flex gap-6 text-sm">
+      {translation.header.nav.map((item) => <NavItem name={item.name} />)}
+    </ul>
+  </nav>
+
+  <Lang />
+</header>
+
+<!-- Motion One animation -->
+<script type="module">
+  import { animate } from "https://cdn.skypack.dev/motion";
+
+  const header = document.querySelector("#main-header");
+
+  if (header) {
+    animate(
+      header,
+      { opacity: [0, 1], x: [-100, 0] },
+      {
+        duration: 0.8,
+        easing: "ease-out",
+      }
+    );
+  }
+</script>

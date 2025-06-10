@@ -1,0 +1,25 @@
+---
+import translation from "@/locales/es/traductions.json";
+const year = new Date().getFullYear();
+---
+
+<footer
+  class="bg-background border-t border-muted/20 py-12 px-6 text-foreground"
+>
+  <div
+    class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4"
+  >
+    <p class="text-xs text-muted tracking-wide text-center sm:text-left">
+      &copy; {year}
+      {translation.footer.title}. {translation.footer.copyright}
+    </p>
+
+    <p class="text-sm text-muted font-medium text-center sm:text-right">
+      Hecho con ❤️ en {
+        new Date().toLocaleDateString("es-ES", {
+          year: "numeric",
+        })
+      }
+    </p>
+  </div>
+</footer>

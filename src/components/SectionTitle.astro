@@ -1,0 +1,9 @@
+---
+import { ArrowDownRight } from "@lucide/astro";
+const { title } = Astro.props;
+---
+
+<div class="flex items-center gap-2 mb-28 text-accent">
+  <h2>{title}</h2>
+  <ArrowDownRight size={20} class="animate-pulse" />
+</div>

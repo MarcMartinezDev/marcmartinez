@@ -1,8 +1,26 @@
 {
-  "home": {
-    "title": "Marc Martinez — Desarrollador Full Stack especializado en webs rápidas y personalizadas",
+  "hero": {
+    "title": "Marc Martínez",
+    "subtitle": "Desarrollador Web",
     "content": "Desarrollo webs modernas y eficientes, hechas a la medida de tus necesidades.",
-    "cta": "¿Hablamos?"
+    "cta": "Quiero un sitio web"
+  },
+  "header": {
+    "title": "Marc Martínez",
+    "nav": [
+      {
+        "name": "Inicio"
+      },
+      {
+        "name": "Servicios"
+      },
+      {
+        "name": "Proyectos"
+      },
+      {
+        "name": "Contacto"
+      }
+    ]
   },
   "about": {
     "title": "Acerca de mí",
@@ -10,51 +28,58 @@
     "cta": "Contactame"
   },
   "services": {
-    "title": "Servicios",
+    "title": "¿Qué te puedo ofrecer?",
     "data": [
       {
+        "id": 1,
         "title": "Diseño y desarrollo web",
-        "content": "Creación de páginas web atractivas y funcionales que reflejan la identidad de tu negocio."
+        "content": "Diseño y desarrollo de sitios web modernos, funcionales y responsivos que transmiten la esencia de tu marca y ofrecen una experiencia óptima en todos los dispositivos y navegadores."
       },
       {
+        "id": 2,
         "title": "Landing page",
-        "content": "Páginas específicas diseñadas para captar clientes y maximizar conversiones."
+        "content": "Diseño de páginas enfocadas en objetivos concretos, ideales para campañas de marketing. Optimizadas para captar leads, destacar beneficios y aumentar tus conversiones efectivamente."
       },
       {
+        "id": 3,
         "title": "Tiendas online (e-commerce)",
-        "content": "Desarrollo de tiendas digitales completas, fáciles de usar y seguras para vender tus productos."
+        "content": "Desarrollo de tiendas virtuales seguras, intuitivas y adaptables, que facilitan la gestión de productos, pagos y envíos para que puedas vender en línea de forma efectiva y profesional."
       },
       {
+        "id": 4,
         "title": "Blogs y plataformas de contenido",
-        "content": "Creación de espacios para compartir información, noticias o contenido de valor para tu audiencia."
+        "content": "Diseño de espacios dinámicos y bien estructurados para publicar artículos, noticias o recursos, fortaleciendo tu presencia online y el vínculo con tu audiencia."
       },
       {
+        "id": 5,
         "title": "Consultoria técnica",
-        "content": "Asesoría personalizada para ayudarte a elegir las mejores tecnologías y estrategias digitales."
+        "content": "Asesoría técnica para definir e implementar las tecnologías y soluciones digitales más adecuadas, alineadas con los objetivos y necesidades de tu negocio."
       }
-    ]
+    ],
+    "cta": "Más información"
   },
   "projects": {
-    "title": "Proyectos",
+    "title": "Proyectos Destacados",
     "data": [
       {
-        "title": "Proyecto 1",
-        "content": "Descripción del proyecto 1"
+        "title": "Landing Page Creativa",
+        "description": "Una página de aterrizaje moderna hecha con Astro y Tailwind.",
+        "image": "/images/projects/landing-page.jpg",
+        "url": "https://mi-proyecto1.com"
       },
       {
-        "title": "Proyecto 2",
-        "content": "Descripción del proyecto 2"
+        "title": "Dashboard Administrativo",
+        "description": "Panel de administración responsivo con autenticación y gráficos.",
+        "image": "/images/projects/dashboard.jpg",
+        "url": "https://mi-proyecto2.com"
       },
       {
-        "title": "Proyecto 3",
-        "content": "Descripción del proyecto 3"
+        "title": "E-commerce Minimalista",
+        "description": "Tienda online funcional y minimalista con sistema de carrito.",
+        "image": "/images/projects/ecommerce.jpg",
+        "url": "https://mi-proyecto3.com"
       }
     ]
-  },
-  "contact": {
-    "title": "Contacto",
-    "content": "¿Tienes una idea o proyecto? Estoy aquí para ayudarte a hacerlo realidad. Disponibilidad flexible y atención personalizada.",
-    "cta": "Enviar mensaje"
   },
   "faqs": {
     "title": "FAQ's",
@@ -159,6 +184,26 @@
         "title": "Lanzamiento y soporte",
         "content": "Publico tu proyecto y continúo disponible para soporte, mantenimiento y futuras mejoras."
       }
+    ]
+  },
+  "contact": {
+    "title": "Habla conmigo",
+    "description": "¿Tienes un proyecto en mente o quieres más información? Rellena el siguiente formulario.",
+    "nameLabel": "Nombre completo",
+    "emailLabel": "Correo electrónico",
+    "messageLabel": "Mensaje",
+    "cta": "Enviar mensaje"
+  },
+  "footer": {
+    "title": "Marc Martínez",
+    "description": "Creando experiencias digitales memorables con pasión y creatividad.",
+    "copyright": "Todos los derechos reservados"
+  },
+  "stats": {
+    "title": "Estadísticas destacadas",
+    "data": [
+      { "value": 10, "label": "Proyectos completados" },
+      { "value": 4, "label": "Años de experiencia" }
     ]
   }
 }
