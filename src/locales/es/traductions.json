@@ -62,22 +62,28 @@
     "title": "Proyectos Destacados",
     "data": [
       {
-        "title": "Landing Page Creativa",
-        "description": "Una página de aterrizaje moderna hecha con Astro y Tailwind.",
-        "image": "/images/projects/landing-page.jpg",
-        "url": "https://mi-proyecto1.com"
+        "id": 1,
+        "title": "Eleganza",
+        "description": "Tienda online funcional y minimalista con sistema de carrito y base de datos con productos.",
+        "image": "/images/eleganza.webp",
+        "url": "https://eleganza-chi.vercel.app/",
+        "type": "E-commerce"
       },
       {
-        "title": "Dashboard Administrativo",
-        "description": "Panel de administración responsivo con autenticación y gráficos.",
-        "image": "/images/projects/dashboard.jpg",
-        "url": "https://mi-proyecto2.com"
+        "id": 2,
+        "title": "Novatasks",
+        "description": "Landing page para aplicación de gestión de proyectos",
+        "image": "/images/novatasks.webp",
+        "url": "https://novatasks.vercel.app/",
+        "type": "Landing page"
       },
       {
-        "title": "E-commerce Minimalista",
-        "description": "Tienda online funcional y minimalista con sistema de carrito.",
-        "image": "/images/projects/ecommerce.jpg",
-        "url": "https://mi-proyecto3.com"
+        "id": 3,
+        "title": "Fuapi",
+        "description": "Pequeña API para desarrolladores, que ofrece datos ficticios para probar sitios web.",
+        "image": "/images/fuapi.webp",
+        "url": "https://fu-api.vercel.app/",
+        "type": "Rest API"
       }
     ]
   },

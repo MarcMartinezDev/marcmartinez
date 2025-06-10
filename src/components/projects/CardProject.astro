@@ -1,35 +1,25 @@
 ---
-const { title, description, image, url, tag, delay } = Astro.props;
+const { title, description, image, url, type, id } = Astro.props;
 ---
 
-<motion-div
-  data-motion
-  data-motion-initial='{"opacity": 0, "y": 30}'
-  data-motion-animate='{"opacity": 1, "y": 0}'
-  data-motion-transition={`{"duration": 0.6, "delay": ${delay}}`}
-  class="group relative bg-card border border-muted/10 rounded-2xl shadow-sm hover:shadow-lg transition-all overflow-hidden"
+<a
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="group cursor-pointer flex flex-col justify-center lg:h-[450px] lg:hover:h-[600px] hover:justify-between gap-10 lg:w-[300px] lg:hover:w-[500px] transition-all border-r border-muted/20 first:border-l first:border-muted/20 duration-300 hover:border-r hover:border-r-accent/30 hover:bg-accent/5"
 >
-  <a href={url} target="_blank" rel="noopener noreferrer">
+  <div class="px-4 mt-4">
+    <p class="text-muted mb-4 group-hover:hidden">0{id}</p>
+    <h3 class="text-xl">{title}</h3>
+    <p class="text-muted text-sm">{type}</p>
+  </div>
+
+  <div class="hidden space-y-4 group-hover:block">
     <img
       src={image}
-      alt={title}
-      class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+      alt={`${title} cover`}
+      class="w-full h-auto object-cover"
     />
-
-    <div class="p-6 flex flex-col gap-3">
-      {
-        tag && (
-          <span class="text-xs bg-secondary/20 text-secondary px-2 py-1 rounded-full w-fit font-medium">
-            {tag}
-          </span>
-        )
-      }
-      <h3
-        class="text-xl font-semibold text-foreground group-hover:text-primary transition-colors"
-      >
-        {title}
-      </h3>
-      <p class="text-muted text-sm leading-relaxed">{description}</p>
-    </div>
-  </a>
-</motion-div>
+    <p class="text-sm px-4 mb-8 min-w-full text-muted">{description}</p>
+  </div>
+</a>
