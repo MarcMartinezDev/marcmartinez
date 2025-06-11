@@ -18,6 +18,12 @@ import Header from "@/components/header/Header.astro";
     <Socials />
     <Header />
     <slot />
+    <script type="module">
+      import { toViewport } from "/animations.js";
+
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => toViewport(section));
+    </script>
     <Footer />
   </body>
 </html>

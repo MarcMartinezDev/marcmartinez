@@ -19,18 +19,7 @@ import Lang from "./Lang.astro";
 
 <!-- Motion One animation -->
 <script type="module">
-  import { animate } from "https://cdn.skypack.dev/motion";
-
+  import { fromTop } from "/animations.js";
   const header = document.querySelector("#main-header");
-
-  if (header) {
-    animate(
-      header,
-      { opacity: [0, 1], x: [-100, 0] },
-      {
-        duration: 0.8,
-        easing: "ease-out",
-      }
-    );
-  }
+  fromTop(header);
 </script>

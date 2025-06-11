@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "marcmartinezdev",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -12,7 +12,6 @@
     "@lucide/astro": "^0.513.0",
     "@tailwindcss/vite": "^4.1.8",
     "astro": "^5.8.1",
-    "motion": "^12.16.0",
     "tailwindcss": "^4.1.8"
   }
 }

@@ -2,7 +2,8 @@
 
 ---
 
-<div
+<aside
+  id="sidebar"
   class="fixed top-0 left-0 h-svh flex flex-col items-center justify-between text-center p-4 w-24"
 >
   <!-- Logo -->
@@ -84,4 +85,11 @@
       </li>
     </ul>
   </div>
-</div>
+</aside>
+
+<!-- Motion One animation -->
+<script type="module">
+  import { animateSidebar } from "/animations.js";
+  const sidebar = document.querySelector("#sidebar");
+  animateSidebar(sidebar);
+</script>

@@ -18,21 +18,11 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Altura mínima igual a la ventana */
-}
-
-#main-content {
-  flex-grow: 1; /* Hace que el contenido principal crezca y empuje el footer hacia abajo */
-}
-
-body {
   @apply xl:w-3/4 xl:m-auto font-sans text-primary;
 }
 
 section {
-  @apply py-24;
+  @apply min-h-screen flex flex-col justify-center opacity-0;
 }
 
 .cta-primary {
