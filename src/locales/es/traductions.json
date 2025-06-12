@@ -215,5 +215,15 @@
       { "value": 10, "label": "Proyectos completados" },
       { "value": 4, "label": "Años de experiencia" }
     ]
+  },
+  "notFound": {
+    "title": "404",
+    "content": "La página que buscas no existe o ha sido movida.",
+    "cta": "Volver al inicio"
+  },
+  "serverError": {
+    "title": "500",
+    "content": "Ha ocurrido un error inesperado. Estamos trabajando en ello.",
+    "cta": "Volver al inicio"
   }
 }

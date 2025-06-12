@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { ArrowLeft } from "@lucide/astro";
+import traduction from "@/locales/es/traductions.json";
+---
+
+<Layout>
+  <section>
+    <h1
+      class="text-6xl lg:text-7xl font-heading font-bold text-accent uppercase"
+    >
+      {traduction.serverError.title}
+    </h1>
+    <p class="text-base text-muted mt-4 max-w-md">
+      {traduction.serverError.content}
+    </p>
+    <a
+      href="/"
+      class="mt-8 inline-flex items-center gap-2 text-accent text-base uppercase"
+    >
+      <ArrowLeft size={16} />
+      {traduction.serverError.cta}
+    </a>
+  </section>
+</Layout>
