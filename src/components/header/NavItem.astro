@@ -2,7 +2,7 @@
 const { name, link } = Astro.props;
 ---
 
-<a href={link} class="w-fit group cursor-pointer">
+<a href={`/${link}`} class="w-fit group cursor-pointer">
   {name}
   <span
     class="w-[0px] h-[2px] bg-transparent block group-hover:bg-accent group-hover:w-full transition-all duration-200"
