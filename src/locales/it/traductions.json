@@ -1,0 +1,198 @@
+{
+  "hero": {
+    "title": "Marc Martínez",
+    "subtitle": "Sviluppatore Web",
+    "content": "Creo siti web moderni ed efficienti su misura per le tue esigenze.",
+    "cta": "Voglio un sito web"
+  },
+  "header": {
+    "title": "Marc Martínez",
+    "nav": [
+      {
+        "name": "Servizi",
+        "link": "/it/#services"
+      },
+      {
+        "name": "Progetti",
+        "link": "/it/#projects"
+      },
+      {
+        "name": "Contatto",
+        "link": "/it/#contact"
+      },
+      {
+        "name": "Domande frequenti",
+        "link": "/it/#faqs"
+      }
+    ]
+  },
+  "about": {
+    "title": "Chi sono",
+    "content": "Con oltre 4 anni di esperienza, aiuto privati e aziende a creare una presenza online attraverso siti web progettati su misura. Mi impegno a comprendere i tuoi obiettivi e lavoro a stretto contatto con te per creare soluzioni efficaci e in grado di far crescere il tuo progetto. Il mio approccio è professionale, amichevole e sempre focalizzato sull’attenzione personalizzata.",
+    "cta": "Contattami"
+  },
+  "services": {
+    "title": "Cosa posso offrirti?",
+    "data": [
+      {
+        "id": 1,
+        "title": "Design e sviluppo web",
+        "content": "Progetto e sviluppo siti moderni, funzionali e responsive che rispecchiano l’identità del tuo brand e garantiscono un'esperienza ottimale su tutti i dispositivi e browser."
+      },
+      {
+        "id": 2,
+        "title": "Landing page",
+        "content": "Progetto pagine mirate, ideali per campagne di marketing. Ottimizzate per generare contatti, evidenziare benefici e aumentare le conversioni."
+      },
+      {
+        "id": 3,
+        "title": "Negozi online (e-commerce)",
+        "content": "Sviluppo e-commerce sicuri, intuitivi e personalizzabili per gestire prodotti, pagamenti e spedizioni in modo professionale."
+      },
+      {
+        "id": 4,
+        "title": "Blog e piattaforme di contenuti",
+        "content": "Progetto spazi dinamici e ben strutturati per pubblicare articoli, notizie o risorse, rafforzando la tua presenza online e il rapporto con il pubblico."
+      },
+      {
+        "id": 5,
+        "title": "Consulenza tecnica",
+        "content": "Consulenza per definire e implementare le tecnologie digitali più adatte, in linea con i tuoi obiettivi e le tue necessità."
+      }
+    ],
+    "cta": "Scopri di più"
+  },
+  "projects": {
+    "title": "Progetti in evidenza",
+    "data": [
+      {
+        "id": 1,
+        "title": "Eleganza",
+        "description": "Negozio online minimalista e funzionale con sistema di carrello e database prodotti.",
+        "image": "/images/eleganza.webp",
+        "url": "https://eleganza-chi.vercel.app/",
+        "type": "E-commerce"
+      },
+      {
+        "id": 2,
+        "title": "Novatasks",
+        "description": "Landing page per un'app di gestione progetti.",
+        "image": "/images/novatasks.webp",
+        "url": "https://novatasks.vercel.app/",
+        "type": "Landing page"
+      },
+      {
+        "id": 3,
+        "title": "Fuapi",
+        "description": "Piccola API per sviluppatori che fornisce dati fittizi per testare siti web.",
+        "image": "/images/fuapi.webp",
+        "url": "https://fu-api.vercel.app/",
+        "type": "Rest API"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Domande frequenti",
+    "data": [
+      {
+        "question": "Quanto tempo richiede un progetto?",
+        "answer": "Il tempo di sviluppo dipende dalla complessità del progetto, dagli strumenti utilizzati e dalle risorse disponibili."
+      },
+      {
+        "question": "Posso chiedere modifiche durante lo sviluppo?",
+        "answer": "Sì, mantengo una comunicazione costante per adattare ciò di cui hai bisogno."
+      },
+      {
+        "question": "Quali tecnologie utilizzi?",
+        "answer": "Utilizzo tecnologie moderne come React, Next.js, Node.js e database SQL per creare siti web veloci e affidabili."
+      },
+      {
+        "question": "Offri supporto dopo la pubblicazione?",
+        "answer": "Sì, puoi contare su di me per manutenzione e miglioramenti futuri."
+      },
+      {
+        "question": "Posso richiedere un preventivo?",
+        "answer": "Certo, fornisco un preventivo stimato in base alle tue esigenze."
+      }
+    ]
+  },
+  "tech": {
+    "title": "Tecnologie",
+    "content": "Lavoro con gli strumenti più recenti per creare siti web veloci, sicuri e scalabili",
+    "frontend": [
+      { "name": "React" },
+      { "name": "Next.js" },
+      { "name": "JavaScript" },
+      { "name": "TypeScript" },
+      { "name": "Tailwind CSS" }
+    ],
+    "backend": [
+      { "name": "Node.js" },
+      { "name": "Express" },
+      { "name": "Prisma" }
+    ],
+    "database": [
+      { "name": "MySQL" },
+      { "name": "PostgreSQL" },
+      { "name": "MongoDB" }
+    ],
+    "cms": [{ "name": "Strapi" }, { "name": "Prestashop" }],
+    "integration": [{ "name": "Stripe" }, { "name": "SendGrid" }]
+  },
+  "process": {
+    "title": "Processo di lavoro",
+    "data": [
+      {
+        "title": "Analisi delle esigenze",
+        "content": "Parliamo dei tuoi obiettivi e degli strumenti da utilizzare."
+      },
+      {
+        "title": "Valutazione del preventivo",
+        "content": "Ti fornisco un preventivo stimato in base alle tue necessità."
+      },
+      {
+        "title": "Sviluppo",
+        "content": "Realizzo il sito mantenendo una comunicazione costante per curare ogni dettaglio."
+      },
+      {
+        "title": "Lancio e supporto",
+        "content": "Lancio il tuo progetto e rimango disponibile per supporto, manutenzione e miglioramenti futuri."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Parliamone",
+    "description": "Hai un progetto in mente o vuoi più informazioni? Compila il modulo qui sotto.",
+    "nameLabel": "Nome completo",
+    "emailLabel": "Indirizzo email",
+    "messageLabel": "Messaggio",
+    "cta": "Invia messaggio"
+  },
+  "footer": {
+    "title": "Marc Martínez",
+    "description": "Creo esperienze digitali memorabili con passione e creatività.",
+    "copyright": "Tutti i diritti riservati"
+  },
+  "stats": {
+    "title": "Statistiche in evidenza",
+    "data": [
+      { "value": 10, "label": "Progetti completati" },
+      { "value": 4, "label": "Anni di esperienza" }
+    ]
+  },
+  "notFound": {
+    "title": "404",
+    "content": "La pagina che stai cercando non esiste o è stata spostata.",
+    "cta": "Torna alla homepage"
+  },
+  "serverError": {
+    "title": "500",
+    "content": "Si è verificato un errore imprevisto. Stiamo lavorando per risolverlo.",
+    "cta": "Torna alla homepage"
+  },
+  "sentEmail": {
+    "title": "Email inviata con successo!",
+    "content": "Grazie per avermi contattato. Ti risponderò il prima possibile.",
+    "cta": "Torna alla homepage"
+  }
+}

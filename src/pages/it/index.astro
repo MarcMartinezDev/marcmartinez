@@ -1,0 +1,33 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Hero from "@/components/hero/Hero.astro";
+import Services from "@/components/services/Services.astro";
+import Process from "@/components/process/Process.astro";
+import Projects from "@/components/projects/Projects.astro";
+import Contact from "@/components/contact/Contact.astro";
+import Faqs from "@/components/faqs/Faqs.astro";
+import traductions from "@/locales/it/traductions.json";
+import Socials from "@/components/Socials.astro";
+import Header from "@/components/header/Header.astro";
+import Footer from "@/components/footer/Footer.astro";
+---
+
+<Layout>
+  <Socials />
+  <Header t={traductions} />
+  <main>
+    <Hero t={traductions} />
+    <Services t={traductions} />
+    <Process t={traductions} />
+    <Projects t={traductions} />
+    <Contact t={traductions} />
+    <Faqs t={traductions} />
+    <script type="module">
+      import { toViewport } from "/animations.js";
+
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => toViewport(section));
+    </script>
+  </main>
+  <Footer t={traductions} />
+</Layout>

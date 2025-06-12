@@ -1,12 +1,13 @@
 ---
 import { ChevronDown } from "@lucide/astro";
+
 const locales = [
-  { code: "", label: "ES" },
+  { code: "es", label: "ES" },
   { code: "en", label: "EN" },
   { code: "it", label: "IT" },
 ];
 
-const currentLocale = Astro.url.pathname.split("/")[1] || "";
+const currentLocale = Astro.url.pathname.split("/")[1] || "es";
 ---
 
 <div class="relative inline-block text-sm">
@@ -19,7 +20,11 @@ const currentLocale = Astro.url.pathname.split("/")[1] || "";
     {
       locales.map((locale) => {
         const selected = locale.code === currentLocale;
-        const targetPath = `/${locale.code}${Astro.url.pathname.replace(/^\/(es|en|it)/, "")}`;
+        const pathWithoutLang = Astro.url.pathname.replace(/^\/(es|en|it)/, "");
+        const targetPath =
+          locale.code === "es"
+            ? `${pathWithoutLang || "/"}`
+            : `/${locale.code}${pathWithoutLang}`;
         return (
           <option value={targetPath} selected={selected}>
             {locale.label}
