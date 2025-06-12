@@ -225,5 +225,10 @@
     "title": "500",
     "content": "Ha ocurrido un error inesperado. Estamos trabajando en ello.",
     "cta": "Volver al inicio"
+  },
+  "sentEmail": {
+    "title": "¡Correo enviado correctamente!",
+    "content": "Gracias por ponerte en contacto. Te responderé lo antes posible.",
+    "cta": "Volver al inicio"
   }
 }

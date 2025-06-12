@@ -1,6 +1,6 @@
 ---
-import translation from "@/locales/es/traductions.json";
 const year = new Date().getFullYear();
+const { t } = Astro.props;
 ---
 
 <footer
@@ -11,7 +11,7 @@ const year = new Date().getFullYear();
   >
     <p class="text-xs text-muted tracking-wide text-center sm:text-left">
       &copy; {year}
-      {translation.footer.title}. {translation.footer.copyright}
+      {t.footer.title}. {t.footer.copyright}
     </p>
 
     <p class="text-sm text-muted font-medium text-center sm:text-right">

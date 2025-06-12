@@ -1,6 +1,7 @@
 ---
+import { ChevronDown } from "@lucide/astro";
 const locales = [
-  { code: "es", label: "ES" },
+  { code: "", label: "ES" },
   { code: "en", label: "EN" },
   { code: "it", label: "IT" },
 ];
@@ -27,14 +28,10 @@ const currentLocale = Astro.url.pathname.split("/")[1] || "";
       })
     }
   </select>
-  <svg
-    class="pointer-events-none absolute right-2 top-2.5 w-4 h-4 text-muted"
-    fill="currentColor"
-    viewBox="0 0 20 20"
+
+  <div
+    class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2"
   >
-    <path
-      fill-rule="evenodd"
-      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
-      clip-rule="evenodd"></path>
-  </svg>
+    <ChevronDown size={18} class="text-muted" />
+  </div>
 </div>

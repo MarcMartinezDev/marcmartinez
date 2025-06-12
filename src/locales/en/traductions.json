@@ -1,0 +1,198 @@
+{
+  "hero": {
+    "title": "Marc Martínez",
+    "subtitle": "Web Developer",
+    "content": "I build modern, efficient websites tailored to your needs.",
+    "cta": "I want a website"
+  },
+  "header": {
+    "title": "Marc Martínez",
+    "nav": [
+      {
+        "name": "Services",
+        "link": "/en/#services"
+      },
+      {
+        "name": "Projects",
+        "link": "/en/#projects"
+      },
+      {
+        "name": "Contact",
+        "link": "/en/#contact"
+      },
+      {
+        "name": "FAQ's",
+        "link": "/en/#faqs"
+      }
+    ]
+  },
+  "about": {
+    "title": "About Me",
+    "content": "With over 4 years of experience, I help individuals and businesses establish an online presence through websites designed and tailored to their specific needs. I strive to understand your goals and work closely with you to create solutions that work and help you grow. My approach is professional, friendly, and always focused on personalized attention.",
+    "cta": "Contact me"
+  },
+  "services": {
+    "title": "What can I offer you?",
+    "data": [
+      {
+        "id": 1,
+        "title": "Web design and development",
+        "content": "Design and development of modern, functional, responsive websites that convey your brand's essence and offer an optimal experience across all devices and browsers."
+      },
+      {
+        "id": 2,
+        "title": "Landing page",
+        "content": "Design of goal-oriented pages, ideal for marketing campaigns. Optimized to capture leads, highlight benefits, and effectively increase conversions."
+      },
+      {
+        "id": 3,
+        "title": "Online stores (e-commerce)",
+        "content": "Development of secure, intuitive, and adaptable online stores that simplify the management of products, payments, and shipping so you can sell online effectively and professionally."
+      },
+      {
+        "id": 4,
+        "title": "Blogs and content platforms",
+        "content": "Design of dynamic, well-structured spaces for publishing articles, news, or resources, strengthening your online presence and connection with your audience."
+      },
+      {
+        "id": 5,
+        "title": "Technical consulting",
+        "content": "Technical advice to define and implement the most suitable digital technologies and solutions, aligned with your business goals and needs."
+      }
+    ],
+    "cta": "Learn more"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "data": [
+      {
+        "id": 1,
+        "title": "Eleganza",
+        "description": "Minimalist and functional online store with shopping cart system and product database.",
+        "image": "/images/eleganza.webp",
+        "url": "https://eleganza-chi.vercel.app/",
+        "type": "E-commerce"
+      },
+      {
+        "id": 2,
+        "title": "Novatasks",
+        "description": "Landing page for a project management app",
+        "image": "/images/novatasks.webp",
+        "url": "https://novatasks.vercel.app/",
+        "type": "Landing page"
+      },
+      {
+        "id": 3,
+        "title": "Fuapi",
+        "description": "Small API for developers providing dummy data for testing websites.",
+        "image": "/images/fuapi.webp",
+        "url": "https://fu-api.vercel.app/",
+        "type": "Rest API"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "FAQ's",
+    "data": [
+      {
+        "question": "How long does a project take?",
+        "answer": "The development time depends on the complexity of the project, the tools used, and available resources."
+      },
+      {
+        "question": "Can I request changes during development?",
+        "answer": "Yes, I maintain constant communication to adjust whatever you need."
+      },
+      {
+        "question": "What technologies do you use?",
+        "answer": "I use modern technologies like React, Next.js, Node.js, and SQL databases to build fast and reliable websites."
+      },
+      {
+        "question": "Do you offer support after launch?",
+        "answer": "Yes, you can count on me for maintenance and future improvements."
+      },
+      {
+        "question": "Can I request a quote?",
+        "answer": "Yes, I provide an estimated quote based on your needs."
+      }
+    ]
+  },
+  "tech": {
+    "title": "Technologies",
+    "content": "I work with the latest tools to build fast, secure, and scalable websites",
+    "frontend": [
+      { "name": "React" },
+      { "name": "Next.js" },
+      { "name": "JavaScript" },
+      { "name": "TypeScript" },
+      { "name": "Tailwind CSS" }
+    ],
+    "backend": [
+      { "name": "Node.js" },
+      { "name": "Express" },
+      { "name": "Prisma" }
+    ],
+    "database": [
+      { "name": "MySQL" },
+      { "name": "PostgreSQL" },
+      { "name": "MongoDB" }
+    ],
+    "cms": [{ "name": "Strapi" }, { "name": "Prestashop" }],
+    "integration": [{ "name": "Stripe" }, { "name": "SendGrid" }]
+  },
+  "process": {
+    "title": "Work Process",
+    "data": [
+      {
+        "title": "Needs assessment",
+        "content": "We discuss your goals and the tools we’ll use."
+      },
+      {
+        "title": "Budget evaluation",
+        "content": "I provide an estimated quote based on your needs."
+      },
+      {
+        "title": "Development",
+        "content": "I build the website while maintaining constant communication to adjust details and ensure everything goes as planned."
+      },
+      {
+        "title": "Launch and support",
+        "content": "I launch your project and remain available for support, maintenance, and future enhancements."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "description": "Have a project in mind or want more information? Fill out the form below.",
+    "nameLabel": "Full name",
+    "emailLabel": "Email address",
+    "messageLabel": "Message",
+    "cta": "Send message"
+  },
+  "footer": {
+    "title": "Marc Martínez",
+    "description": "Creating memorable digital experiences with passion and creativity.",
+    "copyright": "All rights reserved"
+  },
+  "stats": {
+    "title": "Highlighted Stats",
+    "data": [
+      { "value": 10, "label": "Projects completed" },
+      { "value": 4, "label": "Years of experience" }
+    ]
+  },
+  "notFound": {
+    "title": "404",
+    "content": "The page you're looking for doesn't exist or has been moved.",
+    "cta": "Back to homepage"
+  },
+  "serverError": {
+    "title": "500",
+    "content": "An unexpected error has occurred. We're working on it.",
+    "cta": "Back to homepage"
+  },
+  "sentEmail": {
+    "title": "Email successfully sent!",
+    "content": "Thanks for getting in touch. I’ll respond as soon as possible.",
+    "cta": "Back to homepage"
+  }
+}

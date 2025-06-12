@@ -1,7 +1,8 @@
 ---
-import translation from "@/locales/es/traductions.json";
 import NavItem from "./NavItem.astro";
 import Lang from "./Lang.astro";
+
+const { t } = Astro.props;
 ---
 
 <header
@@ -11,7 +12,7 @@ import Lang from "./Lang.astro";
   <nav>
     <ul class="flex gap-6 text-sm">
       {
-        translation.header.nav.map((item) => (
+        t.header.nav.map((item: { name: string; link: string }) => (
           <NavItem name={item.name} link={item.link} />
         ))
       }

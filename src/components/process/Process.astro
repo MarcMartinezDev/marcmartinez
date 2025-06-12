@@ -1,21 +1,24 @@
 ---
-import translation from "@/locales/es/traductions.json";
 import CardProcess from "./CardProcess.astro";
 import SectionTitle from "../SectionTitle.astro";
+
+const { t } = Astro.props;
 ---
 
 <section id="process" class="bg-background text-foreground">
-  <SectionTitle title={translation.process.title} />
+  <SectionTitle title={t.process.title} />
   <div class="max-w-7xl mx-auto">
     <div class="relative grid gap-12 lg:grid-cols-4 md:grid-cols-2">
       {
-        translation.process.data.map((item, index) => (
-          <CardProcess
-            title={item.title}
-            content={item.content}
-            step={index + 1}
-          />
-        ))
+        t.process.data.map(
+          (item: { title: string; content: string }, index: number) => (
+            <CardProcess
+              title={item.title}
+              content={item.content}
+              step={index + 1}
+            />
+          )
+        )
       }
     </div>
   </div>

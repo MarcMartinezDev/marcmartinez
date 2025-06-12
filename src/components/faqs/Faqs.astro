@@ -1,37 +1,40 @@
 ---
-import translation from "@/locales/es/traductions.json";
 import SectionTitle from "../SectionTitle.astro";
+
+const { t } = Astro.props;
 ---
 
 <section id="faqs">
-  <SectionTitle title={translation.faqs.title} />
+  <SectionTitle title={t.faqs.title} />
   <div class="w-full mx-auto lg:w-2/3">
     <div class="space-y-6" id="faq-container">
       {
-        translation.faqs.data.map((item, index) => (
-          <div class="border-b border-muted/20 pb-4">
-            <button
-              class="w-full text-left flex justify-between items-center text-lg font-medium text-foreground hover:text-accent transition-colors"
-              data-index={index}
-            >
-              <span class="text-base">{item.question}</span>
-              <svg
-                class="w-5 h-5 transition-transform"
-                viewBox="0 0 20 20"
-                fill="currentColor"
+        t.faqs.data.map(
+          (item: { question: string; answer: string }, index: number) => (
+            <div class="border-b border-muted/20 pb-4">
+              <button
+                class="w-full text-left flex justify-between items-center text-lg font-medium text-foreground hover:text-accent transition-colors"
+                data-index={index}
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-            <div class="faq-answer mt-2 text-muted text-base hidden">
-              {item.answer}
+                <span class="text-base">{item.question}</span>
+                <svg
+                  class="w-5 h-5 transition-transform"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div class="faq-answer mt-2 text-muted text-base hidden">
+                {item.answer}
+              </div>
             </div>
-          </div>
-        ))
+          )
+        )
       }
     </div>
   </div>

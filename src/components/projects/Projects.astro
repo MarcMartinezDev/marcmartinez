@@ -1,23 +1,33 @@
 ---
-import translation from "@/locales/es/traductions.json";
 import SectionTitle from "../SectionTitle.astro";
 import CardProject from "./CardProject.astro";
+
+const { t } = Astro.props;
 ---
 
 <section id="projects">
-  <SectionTitle title={translation.projects.title} />
+  <SectionTitle title={t.projects.title} />
   <div class="lg:flex justify-center min-h-[600px]">
     {
-      translation.projects.data.map((project) => (
-        <CardProject
-          title={project.title}
-          description={project.description}
-          image={project.image}
-          url={project.url}
-          type={project.type}
-          id={project.id}
-        />
-      ))
+      t.projects.data.map(
+        (item: {
+          id: number;
+          title: string;
+          description: string;
+          image: string;
+          url: string;
+          type: string;
+        }) => (
+          <CardProject
+            title={item.title}
+            description={item.description}
+            image={item.image}
+            url={item.url}
+            type={item.type}
+            id={item.id}
+          />
+        )
+      )
     }
   </div>
 </section>

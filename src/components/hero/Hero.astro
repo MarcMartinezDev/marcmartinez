@@ -1,7 +1,8 @@
 ---
-import translation from "@/locales/es/traductions.json";
 import { ArrowDown } from "@lucide/astro";
 import HeroImage from "./HeroImage.astro";
+
+const { t } = Astro.props;
 ---
 
 <!-- Hero Section -->
@@ -9,24 +10,24 @@ import HeroImage from "./HeroImage.astro";
   <div id="hero" class="w-full lg:w-1/2 flex flex-col justify-between gap-36">
     <div class="flex flex-col justify-center gap-6">
       <span class="text-sm uppercase tracking-widest text-accent mb-2">
-        {translation.hero.subtitle}
+        {t.hero.subtitle}
       </span>
 
       <h1
         class="text-5xl sm:text-6xl lg:text-7xl font-heading font-semibold leading-[1.1] uppercase"
       >
-        {translation.hero.title}
+        {t.hero.title}
       </h1>
 
       <p class="text-lg sm:text-xl text-muted leading-relaxed max-w-xl mt-2">
-        {translation.hero.content}
+        {t.hero.content}
       </p>
 
       <a
         href="#contact"
         class="mt-8 inline-flex w-fit items-center gap-2 text-base text-accent"
       >
-        {translation.hero.cta}
+        {t.hero.cta}
         <ArrowDown size={16} class="mt-0.5 animate-bounce" />
       </a>
     </div>
