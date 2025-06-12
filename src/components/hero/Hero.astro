@@ -2,13 +2,10 @@
 import translation from "@/locales/es/traductions.json";
 import { ArrowDown } from "@lucide/astro";
 import HeroImage from "./HeroImage.astro";
-import Stats from "./Stats.astro";
 ---
 
 <!-- Hero Section -->
-<div
-  class="min-h-screen flex flex-col-reverse lg:flex-row items-center py-24"
->
+<div class="min-h-screen flex flex-col-reverse lg:flex-row items-center py-24">
   <div id="hero" class="w-full lg:w-1/2 flex flex-col justify-between gap-36">
     <div class="flex flex-col justify-center gap-6">
       <span class="text-sm uppercase tracking-widest text-accent mb-2">
@@ -33,7 +30,6 @@ import Stats from "./Stats.astro";
         <ArrowDown size={16} class="mt-0.5 animate-bounce" />
       </a>
     </div>
-    <Stats />
   </div>
 
   <HeroImage />

@@ -1,10 +1,10 @@
 ---
-const { name } = Astro.props;
+const { name, link } = Astro.props;
 ---
 
-<li class="w-fit group cursor-pointer">
+<a href={link} class="w-fit group cursor-pointer">
   {name}
   <span
     class="w-[0px] h-[2px] bg-transparent block group-hover:bg-accent group-hover:w-full transition-all duration-200"
   ></span>
-</li>
+</a>

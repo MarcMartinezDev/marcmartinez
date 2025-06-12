@@ -10,7 +10,11 @@ import Lang from "./Lang.astro";
 >
   <nav>
     <ul class="flex gap-6 text-sm">
-      {translation.header.nav.map((item) => <NavItem name={item.name} />)}
+      {
+        translation.header.nav.map((item) => (
+          <NavItem name={item.name} link={item.link} />
+        ))
+      }
     </ul>
   </nav>
 

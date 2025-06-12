@@ -17,6 +17,10 @@
   src: url("/fonts/Inter_18pt-Bold.ttf") format("truetype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply xl:w-3/4 xl:m-auto font-sans text-primary;
 }

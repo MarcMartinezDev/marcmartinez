@@ -4,9 +4,9 @@ import SectionTitle from "../SectionTitle.astro";
 import CardProject from "./CardProject.astro";
 ---
 
-<section id="projects" class="py-24 px-6 bg-background text-foreground">
+<section id="projects">
   <SectionTitle title={translation.projects.title} />
-  <div class="lg:flex justify-center">
+  <div class="lg:flex justify-center min-h-[600px]">
     {
       translation.projects.data.map((project) => (
         <CardProject

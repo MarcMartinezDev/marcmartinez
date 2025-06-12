@@ -9,16 +9,20 @@
     "title": "Marc Martínez",
     "nav": [
       {
-        "name": "Inicio"
+        "name": "Servicios",
+        "link": "#services"
       },
       {
-        "name": "Servicios"
+        "name": "Proyectos",
+        "link": "#projects"
       },
       {
-        "name": "Proyectos"
+        "name": "Contacto",
+        "link": "#contact"
       },
       {
-        "name": "Contacto"
+        "name": "FAQ's",
+        "link": "#faqs"
       }
     ]
   },

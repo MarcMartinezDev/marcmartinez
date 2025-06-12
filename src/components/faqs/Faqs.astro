@@ -3,9 +3,9 @@ import translation from "@/locales/es/traductions.json";
 import SectionTitle from "../SectionTitle.astro";
 ---
 
-<section id="faq">
+<section id="faqs">
   <SectionTitle title={translation.faqs.title} />
-  <div class="w-full mx-auto">
+  <div class="w-full mx-auto lg:w-2/3">
     <div class="space-y-6" id="faq-container">
       {
         translation.faqs.data.map((item, index) => (
@@ -14,7 +14,7 @@ import SectionTitle from "../SectionTitle.astro";
               class="w-full text-left flex justify-between items-center text-lg font-medium text-foreground hover:text-accent transition-colors"
               data-index={index}
             >
-              <span>{item.question}</span>
+              <span class="text-base">{item.question}</span>
               <svg
                 class="w-5 h-5 transition-transform"
                 viewBox="0 0 20 20"
