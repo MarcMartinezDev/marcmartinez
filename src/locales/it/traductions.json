@@ -194,5 +194,9 @@
     "title": "Email inviata con successo!",
     "content": "Grazie per avermi contattato. Ti risponderò il prima possibile.",
     "cta": "Torna alla homepage"
+  },
+  "meta": {
+    "title": "Marc Martínez | Sviluppatore Web",
+    "description": "Realizzo siti web moderni ed efficienti, su misura per le tue esigenze."
   }
 }

@@ -230,5 +230,9 @@
     "title": "¡Correo enviado correctamente!",
     "content": "Gracias por ponerte en contacto. Te responderé lo antes posible.",
     "cta": "Volver al inicio"
+  },
+  "meta": {
+    "title": "Marc Martínez | Desarrollador Web",
+    "description": "Desarrollo webs modernas y eficientes, hechas a la medida de tus necesidades."
   }
 }

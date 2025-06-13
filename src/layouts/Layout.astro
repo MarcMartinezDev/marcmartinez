@@ -1,15 +1,62 @@
 ---
 import "@/styles/global.css";
+import es from "@/locales/es/traductions.json";
+import en from "@/locales/en/traductions.json";
+import it from "@/locales/it/traductions.json";
+import { getSecret } from "astro:env/server";
+
+const SITE_URL = getSecret("SITE_URL");
+const pathname = Astro.url.pathname;
+const lang = pathname.split("/")[1];
+const { title, description } =
+  lang === "es"
+    ? es.meta
+    : lang === "en"
+      ? en.meta
+      : lang === "it"
+        ? it.meta
+        : es.meta;
+
+const url = lang === "es" ? SITE_URL : `${SITE_URL}/${lang}`;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang || "es"}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={url} />
+    <meta name="author" content="Marc Martínez" />
+    <meta name="copyright" content="Marc Martínez" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <!-- <meta property="og:image" content={image} /> -->
+    <meta property="og:locale" content={lang} />
+    <meta property="og:locale:alternate" content="es" />
+    <meta property="og:locale:alternate" content="en" />
+    <meta property="og:locale:alternate" content="it" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={url} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <!-- <meta name="twitter:image" content={image} /> -->
+
+    <!-- Language alternates for i18n -->
+    <link rel="alternate" hreflang="es" href={`${SITE_URL}/`} />
+    <link rel="alternate" hreflang="en" href={`${SITE_URL}/en/`} />
+    <link rel="alternate" hreflang="it" href={`${SITE_URL}/it/`} />
   </head>
   <body>
     <slot />
