@@ -13,7 +13,7 @@ const currentLocale = Astro.url.pathname.split("/")[1] || "es";
 <div class="relative inline-block text-sm">
   <select
     name="language"
-    class="appearance-none bg-transparent border border-muted/30 rounded-lg px-4 py-2 pr-8 text-muted hover:text-foreground hover:border-accent transition-colors"
+    class="appearance-none bg-transparent outline-none md:border mdborder-muted/30 md:rounded-lg px-4 py-2 pr-6 text-muted hover:text-foreground hover:border-accent transition-colors"
     onchange="window.location.href = this.value"
     aria-label="Language selector"
   >

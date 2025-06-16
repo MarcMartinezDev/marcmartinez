@@ -1,15 +1,15 @@
 ---
 import NavItem from "./NavItem.astro";
 import Lang from "./Lang.astro";
-import { X, Menu } from "@lucide/astro";
+import MobileHeader from "./MobileHeader.astro";
 
 const { t } = Astro.props;
 ---
 
-<!-- Header -->
+<!-- Desktop Header -->
 <header
   id="main-header"
-  class="hidden md:flex sticky w-full top-0 items-center justify-between py-6 z-10 bg-white/80 backdrop-blur-sm"
+  class="hidden md:flex md:px-4 xl:px-0 sticky w-full top-0 items-center justify-between py-6 z-10 bg-white/80 backdrop-blur-sm"
 >
   <nav>
     <ul class="flex gap-6 text-sm">
@@ -20,56 +20,24 @@ const { t } = Astro.props;
       }
     </ul>
   </nav>
-
   <Lang />
 </header>
 
-<!-- Mobile Header -->
+<MobileHeader t={t} />
 
-<header
-  class="md:hidden sticky w-full top-0 overflow-hidden z-10"
->
-  <div class="flex justify-between bg-white/80 backdrop-blur-sm">
-    <Menu id="open-header" size={30} />
-    <div
-      id="mobile-header"
-      class="hidden relative min-h-screen min-w-screen z-10 bg-white"
-    >
-      <X
-        id="close-header"
-        size={24}
-        class="absolute top-6 right-6 cursor-pointer"
-      />
-      <nav class="absolute top-10 left-6 flex flex-col gap-6">
-        {
-          t.header.nav.map((item: { name: string; link: string }) => (
-            <NavItem name={item.name} link={item.link} />
-          ))
-        }
-      </nav>
-    </div>
-    <Lang />
-  </div>
-</header>
-
-<!-- Motion One animation -->
 <script type="module">
   import { fromTop } from "/animations.js";
+
   const header = document.querySelector("#main-header");
-  const mobileHeader = document.querySelector("#mobile-header");
-  const closeHeader = document.querySelector("#close-header");
-  const openHeader = document.querySelector("#open-header");
-  if (header) {
-    fromTop(header);
-  }
-  if (mobileHeader) {
-    closeHeader.addEventListener("click", () => {
-      mobileHeader.classList.add("hidden");
+  const navItems = document.querySelectorAll("#main-header nav a");
+
+  if (header) fromTop(header);
+
+  navItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      const mobileMenu = document.querySelector("#mobile-header");
+      mobileMenu?.classList.remove("translate-x-0");
+      mobileMenu?.classList.add("-translate-x-full");
     });
-  }
-  if (openHeader) {
-    openHeader.addEventListener("click", () => {
-      mobileHeader.classList.remove("hidden");
-    });
-  }
+  });
 </script>

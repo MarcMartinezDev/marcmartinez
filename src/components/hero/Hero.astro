@@ -6,26 +6,29 @@ const { t } = Astro.props;
 ---
 
 <!-- Hero Section -->
-<div class="min-h-screen flex flex-col-reverse lg:flex-row items-center py-24">
-  <div id="hero" class="w-full lg:w-1/2 flex flex-col justify-between gap-36">
+<div class="lg:min-h-screen py-24 lg:py-0 flex lg:flex-row items-center mx-4">
+  <div
+    id="hero"
+    class="w-full text-center lg:text-left lg:w-1/2 flex flex-col justify-between gap-36"
+  >
     <div class="flex flex-col justify-center gap-6">
       <span class="text-sm uppercase tracking-widest text-accent mb-2">
         {t.hero.subtitle}
       </span>
 
       <h1
-        class="text-5xl sm:text-6xl lg:text-7xl font-heading font-semibold leading-[1.1] uppercase"
+        class="text-4xl lg:text-7xl font-heading font-semibold leading-[1.1] uppercase"
       >
         {t.hero.title}
       </h1>
 
-      <p class="text-lg sm:text-xl text-muted leading-relaxed max-w-xl mt-2">
+      <p class="text-lg text-muted mt-2">
         {t.hero.content}
       </p>
 
       <a
         href="#contact"
-        class="mt-8 inline-flex w-fit items-center gap-2 text-base text-accent"
+        class="mt-8 mx-auto lg:mx-0 inline-flex w-fit items-center gap-2 text-base text-accent"
       >
         {t.hero.cta}
         <ArrowDown size={16} class="mt-0.5 animate-bounce" />
@@ -36,7 +39,6 @@ const { t } = Astro.props;
   <HeroImage />
 </div>
 
-<!-- Motion One animation -->
 <script type="module">
   import { fromLeft } from "/animations.js";
 

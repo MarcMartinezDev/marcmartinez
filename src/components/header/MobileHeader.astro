@@ -1,0 +1,62 @@
+---
+import NavItem from "./NavItem.astro";
+import { X, Menu } from "@lucide/astro";
+import Lang from "./Lang.astro";
+
+const { t } = Astro.props;
+---
+
+<!-- Mobile Header -->
+<header
+  class="md:hidden sticky top-0 w-full z-20 shadow-sm bg-white/80 backdrop-blur-sm"
+>
+  <div class="flex justify-between items-center px-4 py-3">
+    <Menu id="open-header" size={28} class="cursor-pointer text-gray-800" />
+    <Lang />
+  </div>
+
+  <!-- Slide-in Menu -->
+  <div
+    id="mobile-header"
+    class="fixed inset-0 h-screen z-30 transform -translate-x-full transition-transform duration-300 ease-in-out bg-white/90 backdrop-blur-sm"
+  >
+    <X
+      id="close-header"
+      size={28}
+      class="absolute top-4 right-4 text-gray-600 hover:text-black cursor-pointer transition-colors duration-200"
+    />
+    <nav
+      class="mt-24 px-6 flex flex-col gap-6 text-lg font-medium text-gray-800"
+    >
+      {
+        t.header.nav.map((item: { name: string; link: string }) => (
+          <NavItem name={item.name} link={item.link} />
+        ))
+      }
+    </nav>
+  </div>
+</header>
+
+<script type="module">
+  const openBtn = document.getElementById("open-header");
+  const closeBtn = document.getElementById("close-header");
+  const mobileMenu = document.getElementById("mobile-header");
+  const navItems = document.querySelectorAll("#mobile-header nav a");
+
+  openBtn?.addEventListener("click", () => {
+    mobileMenu?.classList.remove("-translate-x-full");
+    mobileMenu?.classList.add("translate-x-0");
+  });
+
+  closeBtn?.addEventListener("click", () => {
+    mobileMenu?.classList.remove("translate-x-0");
+    mobileMenu?.classList.add("-translate-x-full");
+  });
+
+  navItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      mobileMenu?.classList.remove("translate-x-0");
+      mobileMenu?.classList.add("-translate-x-full");
+    });
+  });
+</script>

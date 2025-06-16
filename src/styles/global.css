@@ -26,7 +26,7 @@ body {
 }
 
 section {
-  @apply min-h-screen flex flex-col justify-center opacity-0;
+  @apply flex flex-col justify-center mx-4 py-24 lg:py-0 md:mx-10 lg:opacity-0 lg:min-h-screen;
 }
 
 .cta-primary {

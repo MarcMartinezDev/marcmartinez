@@ -8,7 +8,7 @@ const { t } = Astro.props;
 <section id="process" class="bg-background text-foreground">
   <SectionTitle title={t.process.title} />
   <div class="max-w-7xl mx-auto">
-    <div class="relative grid gap-12 lg:grid-cols-4 md:grid-cols-2">
+    <div class="relative grid gap-6 lg:grid-cols-4 md:grid-cols-2">
       {
         t.process.data.map(
           (item: { title: string; content: string }, index: number) => (
