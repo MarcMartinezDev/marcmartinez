@@ -1,4 +1,7 @@
 ---
+import Github from "@/components/svg/Github.astro";
+import Linkedin from "@/components/svg/Linkedin.astro";
+import Instagram from "@/components/svg/Instagram.astro";
 const year = new Date().getFullYear();
 const { t } = Astro.props;
 ---
@@ -7,19 +10,25 @@ const { t } = Astro.props;
   class="bg-background border-t border-muted/20 py-12 px-6 text-foreground"
 >
   <div
-    class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4"
+    class="max-w-7xl mx-auto flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between"
   >
+    <!-- Copyright -->
     <p class="text-xs text-muted tracking-wide text-center sm:text-left">
       &copy; {year}
       {t.footer.title}. {t.footer.copyright}
     </p>
 
-    <p class="text-sm text-muted font-medium text-center sm:text-right">
-      Hecho con ❤️ en {
-        new Date().toLocaleDateString("es-ES", {
-          year: "numeric",
-        })
-      }
-    </p>
+    <div class="flex justify-center gap-4 sm:justify-end xl:hidden">
+      <Github />
+      <Linkedin />
+      <Instagram />
+    </div>
+
+    <nav class="flex flex-wrap justify-center gap-4 text-xs text-muted">
+      <a href="/#services" class="hover:text-primary transition">Servicios</a>
+      <a href="/#projects" class="hover:text-primary transition">Proyectos</a>
+      <a href="/#contact" class="hover:text-primary transition">Contacto</a>
+      <a href="/#faqs" class="hover:text-primary transition">FAQs</a>
+    </nav>
   </div>
 </footer>
