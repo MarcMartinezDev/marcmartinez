@@ -5,7 +5,7 @@ import CardProject from "./CardProject.astro";
 const { t } = Astro.props;
 ---
 
-<section id="projects">
+<section id={t.sections.projects}>
   <SectionTitle title={t.projects.title} />
   <div class="lg:flex justify-center lg:min-h-[600px] space-y-14">
     {

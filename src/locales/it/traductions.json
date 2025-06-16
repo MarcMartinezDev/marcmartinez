@@ -10,19 +10,19 @@
     "nav": [
       {
         "name": "Servizi",
-        "link": "/it/#services"
+        "link": "#servizi"
       },
       {
         "name": "Progetti",
-        "link": "/it/#projects"
+        "link": "#progetti"
       },
       {
         "name": "Contatto",
-        "link": "/it/#contact"
+        "link": "#contatto"
       },
       {
-        "name": "Domande frequenti",
-        "link": "/it/#faqs"
+        "name": "FAQ",
+        "link": "#domande-frequenti"
       }
     ]
   },
@@ -198,5 +198,11 @@
   "meta": {
     "title": "Marc Martínez | Sviluppatore Web",
     "description": "Realizzo siti web moderni ed efficienti, su misura per le tue esigenze."
+  },
+  "sections": {
+    "services": "servizi",
+    "projects": "progetti",
+    "contact": "contatto",
+    "faqs": "domande-frequenti"
   }
 }

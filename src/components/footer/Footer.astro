@@ -25,10 +25,11 @@ const { t } = Astro.props;
     </div>
 
     <nav class="flex flex-wrap justify-center gap-4 text-xs text-muted">
-      <a href="/#services" class="hover:text-primary transition">Servicios</a>
-      <a href="/#projects" class="hover:text-primary transition">Proyectos</a>
-      <a href="/#contact" class="hover:text-primary transition">Contacto</a>
-      <a href="/#faqs" class="hover:text-primary transition">FAQs</a>
+      {
+        t.header.nav.map((item: { name: string; link: string }) => (
+          <a href={item.link}>{item.name}</a>
+        ))
+      }
     </nav>
   </div>
 </footer>

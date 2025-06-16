@@ -5,7 +5,7 @@ import SectionTitle from "../SectionTitle.astro";
 const { t } = Astro.props;
 ---
 
-<section id="services">
+<section id={t.sections.services}>
   <SectionTitle title={t.services.title} />
 
   <div class="flex flex-col">

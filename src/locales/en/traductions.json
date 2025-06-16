@@ -10,19 +10,19 @@
     "nav": [
       {
         "name": "Services",
-        "link": "/en/#services"
+        "link": "#services"
       },
       {
         "name": "Projects",
-        "link": "/en/#projects"
+        "link": "#projects"
       },
       {
         "name": "Contact",
-        "link": "/en/#contact"
+        "link": "#contact"
       },
       {
         "name": "FAQ's",
-        "link": "/en/#faqs"
+        "link": "#frequently-asked-questions"
       }
     ]
   },
@@ -198,5 +198,11 @@
   "meta": {
     "title": "Marc Martínez | Web Developer",
     "description": "I build modern, efficient websites tailored to your needs."
+  },
+  "sections": {
+    "services": "services",
+    "projects": "projects",
+    "contact": "contact",
+    "faqs": "frequently-asked-questions"
   }
 }

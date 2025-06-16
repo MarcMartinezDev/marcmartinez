@@ -10,19 +10,19 @@
     "nav": [
       {
         "name": "Servicios",
-        "link": "#services"
+        "link": "#servicios"
       },
       {
         "name": "Proyectos",
-        "link": "#projects"
+        "link": "#proyectos"
       },
       {
         "name": "Contacto",
-        "link": "#contact"
+        "link": "#contacto"
       },
       {
         "name": "FAQ's",
-        "link": "#faqs"
+        "link": "#preguntas-frecuentes"
       }
     ]
   },
@@ -234,5 +234,11 @@
   "meta": {
     "title": "Marc Martínez | Desarrollador Web",
     "description": "Desarrollo webs modernas y eficientes, hechas a la medida de tus necesidades."
+  },
+  "sections": {
+    "services": "servicios",
+    "projects": "proyectos",
+    "contact": "contacto",
+    "faqs": "preguntas-frecuentes"
   }
 }
