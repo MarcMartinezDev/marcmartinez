@@ -1,0 +1,36 @@
+---
+const { t } = Astro.props;
+---
+
+<main id="about" class="reltive min-h-screen flex items-center">
+  <div
+    class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+  >
+    <!-- Image -->
+    <div class="w-full">
+      <img
+        src="/images/hero-template.webp"
+        alt="Foto sobre mí"
+        class="object-cover w-full h-auto max-h-[500px]"
+      />
+    </div>
+
+    <!-- Text -->
+    <div class="flex flex-col space-y-6">
+      <h2 class="text-3xl font-semibold">{t.about.title}</h2>
+      <p class="text-muted leading-relaxed">
+        {t.about.presentation}
+      </p>
+      <p class="text-muted leading-relaxed">
+        {t.about.skills}
+      </p>
+      <p class="text-muted leading-relaxed">
+        {t.about.other}
+      </p>
+
+      <a href={`/#${t.sections.contact}`} class="cta-primary w-fit mt-4"
+        >{t.about.cta}</a
+      >
+    </div>
+  </div>
+</main>

@@ -3,6 +3,7 @@ import NavItem from "./NavItem.astro";
 import Lang from "./Lang.astro";
 import MobileHeader from "./MobileHeader.astro";
 
+const lang = Astro.url.pathname.split("/")[1];
 const { t } = Astro.props;
 ---
 

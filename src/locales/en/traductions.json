@@ -10,26 +10,32 @@
     "nav": [
       {
         "name": "Services",
-        "link": "#services"
+        "link": "/en/#services"
       },
       {
         "name": "Projects",
-        "link": "#projects"
+        "link": "/en/#projects"
       },
       {
         "name": "Contact",
-        "link": "#contact"
+        "link": "/en/#contact"
       },
       {
         "name": "FAQ's",
-        "link": "#frequently-asked-questions"
+        "link": "/en/#frequently-asked-questions"
+      },
+      {
+        "name": "About",
+        "link": "/en/about"
       }
     ]
   },
   "about": {
     "title": "About Me",
-    "content": "With over 4 years of experience, I help individuals and businesses establish an online presence through websites designed and tailored to their specific needs. I strive to understand your goals and work closely with you to create solutions that work and help you grow. My approach is professional, friendly, and always focused on personalized attention.",
-    "cta": "Contact me"
+    "presentation": "Hi! I'm Marc, a passionate web developer with over 4 years of experience designing websites. I specialize in creating modern and efficient websites and web applications.",
+    "skills": "I specialize in both frontend and backend development, focused on delivering creative, functional, and tailor-made solutions for each client. My goal is for every project to not only look great but also achieve real results.",
+    "other": "When I'm not working on new projects, I'm probably learning new tools, exploring new ideas, or having coffee ☕.",
+    "cta": "Let's Talk"
   },
   "services": {
     "title": "What can I offer you?",

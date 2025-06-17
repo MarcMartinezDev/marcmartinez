@@ -10,26 +10,32 @@
     "nav": [
       {
         "name": "Servizi",
-        "link": "#servizi"
+        "link": "/it/#servizi"
       },
       {
         "name": "Progetti",
-        "link": "#progetti"
+        "link": "/it/#progetti"
       },
       {
         "name": "Contatto",
-        "link": "#contatto"
+        "link": "/it/#contatto"
       },
       {
         "name": "FAQ",
-        "link": "#domande-frequenti"
+        "link": "/it/#domande-frequenti"
+      },
+      {
+        "name": "Chi sono",
+        "link": "/it/chi-sono"
       }
     ]
   },
   "about": {
-    "title": "Chi sono",
-    "content": "Con oltre 4 anni di esperienza, aiuto privati e aziende a creare una presenza online attraverso siti web progettati su misura. Mi impegno a comprendere i tuoi obiettivi e lavoro a stretto contatto con te per creare soluzioni efficaci e in grado di far crescere il tuo progetto. Il mio approccio è professionale, amichevole e sempre focalizzato sull’attenzione personalizzata.",
-    "cta": "Contattami"
+    "title": "Chi Sono",
+    "presentation": "Ciao! Sono Marc, uno sviluppatore web appassionato con oltre 4 anni di esperienza nella progettazione di siti web. Sono specializzato nella creazione di siti e applicazioni web moderni ed efficienti.",
+    "skills": "Mi occupo sia dello sviluppo frontend che backend, con un focus su soluzioni creative, funzionali e su misura per ogni cliente. Il mio obiettivo è che ogni progetto non solo abbia un bell'aspetto, ma raggiunga anche risultati concreti.",
+    "other": "Quando non lavoro a nuovi progetti, probabilmente sto imparando nuovi strumenti, esplorando nuove idee o bevendo un caffè ☕.",
+    "cta": "Parliamone"
   },
   "services": {
     "title": "Cosa posso offrirti?",

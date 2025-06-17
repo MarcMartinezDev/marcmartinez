@@ -10,26 +10,32 @@
     "nav": [
       {
         "name": "Servicios",
-        "link": "#servicios"
+        "link": "/#servicios"
       },
       {
         "name": "Proyectos",
-        "link": "#proyectos"
+        "link": "/#proyectos"
       },
       {
         "name": "Contacto",
-        "link": "#contacto"
+        "link": "/#contacto"
       },
       {
         "name": "FAQ's",
-        "link": "#preguntas-frecuentes"
+        "link": "/#preguntas-frecuentes"
+      },
+      {
+        "name": "Sobre mí",
+        "link": "/sobre-mi"
       }
     ]
   },
   "about": {
-    "title": "Acerca de mí",
-    "content": "Más de 4 años de experiencia, ayudo a personas y negocios a tener presencia online con sitios web diseñados y adaptados a lo que realmente necesitan. Me esfuerzo por entender tus objetivos y trabajar de cerca contigo para crear soluciones que funcionen y te hagan crecer. Mi forma de trabajar es cercana, profesional y siempre con atención personalizada.",
-    "cta": "Contactame"
+    "title": "Sobre mí",
+    "presentation": "Hola! Soy Marc, un apasionado desarrollador web con más de 4 años de experiencia diseñando sitios web. Me especializo en la creación de webs y aplicaciones web modernas y eficientes.",
+    "skills": "Me especializo tanto en el desarrollo frontend como backend, enfocado en ofrecer soluciones creativas, funcionales y hechas a medida para cada cliente. Mi objetivo es que cada proyecto no solo se vea bien, sino que también cumpla objetivos reales.",
+    "other": "Cuando no estoy trabajando en nuevos proyectos, probablemente esté aprendiendo nuevas herramientas, explorando nuevas ideas o tomando café ☕.",
+    "cta": "Hablemos"
   },
   "services": {
     "title": "¿Qué te puedo ofrecer?",
